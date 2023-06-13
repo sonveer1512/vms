@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+
+
+
+
+/*universal style*/
+body
+{
+	font-family: "Jost";
+}
+h1,h2,h3,h4,h5,h6,p
+{
+	margin-bottom: 0;
+}
+
+
+.registration-form
+{
+	min-height: 100vh;
+	max-width: 100vw;
+	overflow: clip !important;
+}
+
+/*shapes*/
+.shapes-top
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.shapes-bottom
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.shapes-top .big-shape, .shapes-bottom .big-shape
+{
+
+  background-color: rgb(118, 80, 224);
+  width: 50px;
+  height: 40px;
+
+}
+.shapes-top .small-shape, .shapes-bottom .small-shape
+{
+	width: 30px;
+	 background-color: rgb(118, 80, 224);
+	 position: relative;
+	 right: 60%;
+	height: 30px;
+}
+
+/*sidebar*/
+.sidebar
+{
+	background-color: #7650e0;
+	background-image: url(../images/sidebar-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+.sidebar-inner
+{
+	position: sticky;
+	top: 0;
+	min-height: 100vh;
+
+}
+.wrapper
+{
+	box-sizing: border-box;
+	padding: 150px 0 50px 70px;
+	width: 100%;
+}
+
+/*sidebar-text*/
+.sidebar-text h2
+{
+
+  font-size: 55px;
+  color: rgb(225, 225, 225);
+  font-weight: bold;
+
+}
+.sidebar-text p
+{
+
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(225, 225, 225);
+  margin-top: 30px;
+  width: 85%;
+  font-weight: 300;
+
+}
+
+
+/*contact-info*/
+.contact-info
+{
+	margin: 40px 0px;
+}
+.contact-info-inner
+{
+	margin-bottom: 20px;
+	display: flex;
+}
+.contact-info .contact-icon
+{
+  background-color: rgb(25, 25, 27);
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 62px;
+
+}
+.contact-info .contact-icon i
+{
+	font-size: 24px;
+	color: rgb(255,255,255);
+}
+
+/*rotate phone icon*/
+.fa-rotate-by
+{
+	    --fa-rotate-angle: -45deg;
+}
+.contact-info .contact-details
+{
+	width: auto;
+	margin-left: 20px;
+	color: rgb(255, 255, 255);
+}
+.contact-info .contact-details p
+{
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0;
+
+}
+.contact-info .contact-details h6
+{
+  font-size: 22px;
+  font-weight: 300;
+
+}
+.contact-info button
+{
+  margin-top: 20px;
+  border-radius: 32px;
+  background: transparent;
+  font-size: 17px;
+
+      font-weight: bold;
+  position: relative;
+    transition: all .5s ease;
+    background-color: rgb(25, 25, 27);
+    border: 0;
+  z-index: 0;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  overflow: hidden;
+
+}
+.contact-info button:before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-image: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s ease;
+}
+.contact-info button:hover:before
+{
+    left: 100%;
+}
+
+/*registration-form*/
+.registration-form-inner
+{
+	background-color: rgb(255, 255, 255);
+	position: relative;
+
+}
+
+.registration-inner
+{
+	min-height: 100vh;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.registration-form-inner .wrapper
+{
+	padding: 80px 120px 40px 120px;
+
+}
+
+/*main-heading*/
+.main-heading
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgb(22, 40, 63);
+}
+.main-heading h1
+{
+  font-size: 45px;
+  font-weight: bold;
+}
+.main-heading p
+{
+	margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main-heading p a
+{
+	color: #7650e0;
+}
+
+
+/*form*/
+.form-inner
+{
+	margin-top: 60px;
+}
+.form-inner h3
+{
+  font-size: 30px;
+  color: rgb(22, 40, 63);
+  font-weight: bold;
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.end_border
+{
+	border-bottom: solid 1px rgb(218, 218, 218);
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+.form-inner h3::before
+{
+	content: "*";
+	position: absolute;
+	top: 0;
+	left: -30px;
+	color: inherit;
+}
+
+/*form label*/
+.form-inner label
+{
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 40px;
+	transition: 0.5s ease;
+	top: 0;
+	width: fit-content;
+  font-size: 16px;
+  color: rgb(114, 114, 114);
+  font-weight: bold;
+}
+
+
+/*form input-field*/
+.input-field
+{
+	width: 100%;
+		transition: 0.5s;
+  height: 65px;
+  position: relative;
+  margin-bottom: 20px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*form field style*/
+.input-field input, .input-field select
+{
+  border-radius: 30px;
+  border: solid 2px rgb(229, 229, 229);
+  background-color: rgb(255, 255, 255);
+  display: block;
+  padding-left: 40px;
+ 	transition: 0.5s ease;
+  width: inherit;
+  height: inherit;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(178, 178, 178);
+  margin-bottom: 15px;
+  position: relative;
+}
+.input-field select
+{
+	-webkit-appearance: none;
+	  position: relative;
+	  cursor: pointer;
+	  z-index: 0;
+	  background: transparent;
+}
+
+
+/*form select field dropdown button*/
+.input-field select+span::after
+{
+
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(178, 178, 178);
+  line-height: 30px;
+  content: "\f107";
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(236, 236, 236);
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: calc(0px + 15px);
+  top: 26%;
+  cursor: pointer;
+  z-index: 0;
+}
+.input-field input[type=number]
+{
+	  	-webkit-appearance: none;
+}
+
+
+/*on focus style*/
+.focused label
+{
+	color: rgb(255,255,255);
+	background-color: rgb(118, 80, 224);
+	padding-left: 15px;
+	padding-right: 15px;
+  border-radius: 12px;
+  width: fit-content;
+  position: relative;
+  top: 12px;
+  z-index: 1;
+}
+.focused input:focus,.focused select:focus
+{
+  border: solid 2px rgb(118, 80, 224);
+  box-shadow: 0px 1px 29px 0px rgba(1, 1, 1, 0.09);
+  outline: none;
+
+}
+
+.focused .input-field input+span:before, .focused .input-field select+span:before
+{
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	font-weight: bold;
+  color: rgb(255, 255, 255);
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(118, 80, 224);
+  width: 33px;
+  height: 33px;
+	position: absolute;
+	left: -16.5px;
+	top: 25%;
+	z-index: 10;
+}
+.focused select+span::after
+{
+	background-color: rgb(118, 80, 224);
+	color: rgb(255,255,255);
+}
+
+
+/*password-field eye-icon*/
+.input-field .toggle-icon
+{
+	position: absolute;
+	top: 40%;
+	cursor: pointer;
+	right: 20px;
+  font-size: 16px;
+  color: rgb(104, 104, 104);
+
+}
+
+/*password meter*/
+.pass-strength
+{
+	line-height: 0;
+	text-align: center;
+	background-color: rgb(241, 241, 241);
+  width: 300px;
+  margin: 0px auto;
+  transition: 0.5s  ease;
+  height: 3px;
+}
+.pass-strength span
+{
+	background-color: rgb(120, 197, 115);
+	height: inherit;
+	z-index: 1;
+	display: inherit;
+	transition: 0.5s  ease;
+	width: 0;
+}
+
+/*pass-strength*/
+.pass-check 
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.pass-check span
+{
+	display: block;
+  font-size: 15px;
+  color: rgb(114, 114, 114);
+  font-weight: bold;
+  margin: 10px 0;
+}
+.pass-check span i
+{
+	margin-right: 20px;
+}
+.pass-check .fa-check
+{
+	color: #78c573;
+}
+.pass-check .fa-xmark
+{
+	color: #ff4444;
+}
+
+/*on focus before icons*/
+.focused .input-field input[type=text]+span:before
+{
+		content: "\f007";
+}
+.focused .input-field input[type=email]+span:before
+{
+	content: "\f0e0";
+}
+.focused .input-field input[type=tel]+span:before
+{
+	content: "\f095";
+}
+.focused .input-field input[name=reg-num]+span:before
+{
+	content: "\f02a";
+}
+.focused .input-field select+span:before
+{
+	content: "\f57d";
+}
+.focused .input-field input[type=number]+span:before
+{
+	content: "\23";
+}
+.focused .input-field input[type=password]+span:before
+{
+	content: "\f084";
+}
+
+
+/*registration button/terms notification*/
+.register-field
+{
+	margin-top: 30px;
+
+}
+.register-field label
+{
+  font-size: 16px;
+  color: rgb(22, 40, 63);
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  width: 50%;
+  margin-left: 40px;
+
+}
+.register-field .label-text
+{
+	margin-left: 10px;
+}
+.register-field .label-input
+{
+	margin-top: 5px;
+}
+.register-field .label-input input[type=checkbox]
+{
+  -webkit-appearance: none;
+  border: solid 2px rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+}
+.register-field .label-input input[type=checkbox]:checked
+{
+
+	border:  solid 2px rgb(118, 80, 224);
+}
+.register-field .label-input input[type=checkbox]:checked::before
+{
+	position: absolute;
+	content: "\f00c";
+	background-color: rgb(118, 80, 224);
+	width: 100%;
+	height: 100%;
+		font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+.register-field label a
+{
+	text-decoration: none;
+	color: rgb(118, 80, 224);
+}
+.reg-btn
+{
+
+  width: 280px;
+  height: 70px;
+
+}
+.reg-btn button
+{
+	border-radius: 33px;
+  background-color: rgb(118, 80, 224);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  border: solid 2px transparent;
+  font-weight: bold;
+}
+.reg-btn button::before
+{
+	font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(178, 178, 178);
+  content: "\f101";
+  transition: 0.5s all ease;
+  position: absolute;
+  left: -100px;
+  opacity: 0;
+  z-index: 0;
+}
+.reg-btn:hover button::before
+{
+	opacity: 1;
+	left: calc(0px + 30px);
+}
+
+
+
+
+
+
+.thankyou-page .logo
+{
+    justify-content: center;
+    margin-top: 60px;
+}
+.thankyou-page .logo-icon
+{
+    width: 55px;
+    margin-right: 10px;
+}
+.thankyou-page .logo .logo-icon img
+{
+    width: 100%;
+}
+.thankyou-page .logo-text
+{
+    font-size: 65px;
+}
+.thankyou-page .main-inner
+{
+    background-image: url(../images/thankyou-bg.html) !important;
+    background-color: var(--text-color-hover);
+
+}
+.thankyou-page article
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.thankyou-page article h1
+{
+        font-size: 75px;
+        font-weight: bold;
+        text-transform: uppercase; 
+}
+.thankyou-page article h1 span
+{
+    display: block;
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.thankyou-page article span
+{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.thankyou-page article p
+{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: var(--secondary--text-color);
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 39%;
+}
+.social-media
+{
+    text-align: center;
+    margin: 40px auto;
+    background-color: var(--text-color-hover);
+    width: 30%;
+    padding: 6px 10px;
+}
+.social-media button
+{
+    border: solid 1px rgb(244, 244, 244);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--secondary--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.social-media button i
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.back-home
+{
+    width: 188px;
+    height: 63px;
+    margin: 0 auto;
+}
+.back-home button
+{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: var(--text-color-hover);
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0;
+
+}
+
+
+
+
+
+
+
+#sub img
+{
+    width: 60px;
+}
+
+.highlight
+{
+    border-top: solid 3px var(--primary-color) !important;
+    border-bottom: solid 3px var(--primary-color) !important;
+
+}
+
+
+#error
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+
+.invalid
+{
+  border: solid 2px #ff4444 !important;
+  position: relative;
+}

@@ -1,0 +1,56 @@
+.required-indicator {
+    color: red;
+    font-size: 14px;
+    margin-left: 3px;
+    font-weight: 700;
+}
+
+.navbar-brand h6 {
+    color: white;
+    margin-bottom: 0px;
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+.pointerhand {
+    background: white;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.backred {
+    background-color: rgba(255, 0, 0, 0.492);
+    color: white;
+    border-radius: 25px;
+    text-align: -webkit-center;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.backblue {
+    background-color: rgba(0, 0, 255, 0.36);
+    color: white;
+    border-radius: 25px;
+    text-align: -webkit-center;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.backgreen {
+    background-color: rgba(0, 128, 0, 0.458);
+    color: white;
+    border-radius: 25px;
+    text-align: -webkit-center;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.err_resp {
+    color: green;
+}
